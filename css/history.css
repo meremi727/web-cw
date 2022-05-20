@@ -1,0 +1,38 @@
+.row {
+    background-color: #ffffff;
+    border: 5px solid #a8a9ac;
+    border-radius: 10px;
+    margin: 2.5vh 20vw;
+    max-width: 60vw;
+    min-width: 55vw;
+    padding: 15px;
+    font-family: Vk_Medium;
+    text-indent: 20px;
+}
+
+footer {
+    text-align: center;
+    margin: 7.5vh 40vw;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 16pt;
+}
+
+blockquote {
+    background-color: #ffff99;
+    border-radius: 0 50px 0 50px;
+    border: 5px black dotted;
+    padding: 10px;
+    padding-left: 25px;
+    font-size: 20pt;
+    font-family: Vk-Bold;
+    font-weight: bold;
+    margin: 30px 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

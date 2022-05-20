@@ -1,0 +1,65 @@
+.row {
+    background-color: #ffffff;
+    border: 5px solid #a8a9ac;
+    border-radius: 10px;
+    margin: 2.5vh 20vw;
+    max-width: 60vw;
+    min-width: 55vw;
+    padding: 15px;
+    font-family: Vk_Medium;
+    text-indent: 20px;
+}
+
+
+#ecotable {
+    font-family: Times New Roman;
+    background-color: white;
+    padding: 10px;
+}
+
+#ecotable th {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#th {
+    margin-bottom: 20px;
+}
+
+#ecotable td {
+    padding-bottom: 20px;
+    width: max-content;
+}
+
+.tab {
+    position: relative;
+    margin-left: 21vw;
+    margin-right: 21vw;
+    background-color: #ffff99;
+    border: 6px solid #a8a9ac;
+    border-radius: 10px;
+    font-family: Vk_Medium;
+    text-indent: 20px;
+    height: calc(55vh - 2px);
+    padding-right: 7px;
+}
+
+[src="table.html"] {
+    height: 55vh;
+    width: calc(100% - 12px);
+}
+
+footer {
+    text-align: center;
+    margin: 7.5vh 40vw;
+}
+
+span {
+    padding-left: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+}

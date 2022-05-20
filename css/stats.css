@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    bottom: 20px;
+    margin: 20px 50vw;
+    text-align: center;
+}
+
+.row {
+    background-color: #ffffff;
+    border: 10px solid #e7e8ec;
+    border-radius: 4px;
+    margin: 2.5vw 15vw 0 15vw;
+    width: calc(70vw - 120px);
+    height: 60vh;
+    min-height: 525px;
+    padding: 20px 50px;
+    text-align: left;
+}
+
+.row li img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.row li {
+    margin: 0.5vw;
+    font-size: 22pt;
+    position: relative;
+    height: 80px;
+}
+
+.row div {
+    display: inline-block;
+    padding: 15px 80px;
+    position: absolute;
+}
