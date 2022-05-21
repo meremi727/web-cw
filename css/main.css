@@ -35,74 +35,91 @@ html {
 
 .content {
     position: relative;
-    width: 100vw;
-    height: auto;
-    min-height: 75vh;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    padding-top: 3%;
 }
 
 /* MENU */
-.menu {
-    background-color: white;
-    position: relative;
-    margin: 1vh 15vw 5vh 15vw;
-    width: 70vw;
-    border-radius: 10px;
-    border: 5px #a2a2a3 solid;
+@media (min-width:1024px) {
+    .menu {
+        background-color: white;
+        position: relative;
+        margin: 1% 0 0 15%;
+        width: 70%;
+        border-radius: 10px;
+        border: 5px #a2a2a3 solid;
+    }
+
+    .buttons {
+        text-align: center;
+        font-family: Verdana;
+        font-size: 1.25vw;
+        font-weight: bolder;
+        border-radius: 25px;
+        transition: all 0.4s;
+        font-style: oblique;
+    }
+
+    .buttons:hover {
+        transform: scale(1.15);
+    }
+
+    #logo img:hover {
+        transform: rotate(360deg) scale(1.2);
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #logo {
+        width: 5%;
+        height: 100%;
+        padding: 0.3% 0.2% 0.2% 0.2%;
+    }
+
+    #logo img {
+        width: 100%;
+        transition: all 1s;
+    }
+
+    [active="0"] {
+        content: '';
+        height: 10px;
+        width: auto;
+        background-color: #649ada;
+        border-radius: 5px;
+        border: 1px #ffffff solid;
+    }
+
+    [active="1"] {
+        content: '';
+        height: 10px;
+        width: auto;
+        background-color: blueviolet;
+        border-radius: 5px;
+        border: 1px #ffffff solid;
+    }
+
 }
 
-.buttons {
-    text-align: center;
-    font-family: Verdana;
-    font-size: 25px;
-    font-weight: bolder;
-    border-radius: 10px;
-    transition: all 0.4s;
-    font-style: oblique;
+/* MOBILE */
+@media (max-width:1px) {
+
+    .buttons {
+        text-align: center;
+        font-family: Verdana;
+        font-size: medium;
+        font-weight: bolder;
+        border-radius: 10px;
+        transition: all 0.4s;
+        font-style: oblique;
+    }
 }
 
-.buttons:hover {
-    transform: scale(1.15);
-}
+@media (min-width:1023px) {}
 
-.menu a {
-    text-decoration: none;
-    color: black;
-}
-
-#logo {
-    width: 1vw;
-    height: 6vh;
-    padding: 0.3vw 0.2vw 0.2vw 0.2vw;
-}
-
-#logo img {
-    width: 50px;
-    transition: all 1s;
-}
-
-#logo img:hover {
-    transform: rotate(360deg);
-}
-
-[active="0"] {
-    content: '';
-    height: 10px;
-    width: auto;
-    background-color: #649ada;
-    border-radius: 5px;
-    border: 1px #ffffff solid;
-}
-
-[active="1"] {
-    content: '';
-    height: 10px;
-    width: auto;
-    background-color: blueviolet;
-    border-radius: 5px;
-    border: 1px #ffffff solid;
-}
 
 /* CONTACT */
 /* MOBILE */
@@ -114,6 +131,8 @@ html {
         display: none;
     }
 }
+
+
 
 /* ALL DEVICES WITHOUT MOBILE */
 @media (min-height:675px) {
@@ -203,9 +222,4 @@ html {
         opacity: 0.5;
         z-index: 10;
     }
-}
-
-/* FOOTER */
-footer::before {
-    content: '2022';
 }
