@@ -1,39 +1,43 @@
+/* Подпись под фото */
 .marina center {
     text-align: center;
     font-family: Calibri;
-    font-size: medium;
-    margin-bottom: 20px;
+    font-size: calc(4px + (20 - 4) * ((100vw - 320px) / (1920 - 320)));;
+    margin-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));;
 }
 
+/* Фото во 2 колонке */
 .marina img {
-    margin: 0.5vw;
+    margin: calc(3px + (11 - 3) * ((100vw - 320px) / (1920 - 320)));
     width: 96%;
-    border-radius: 50px;
+    border-radius: calc(10px + (50 - 10) * ((100vw - 320px) / (1920 - 320)));;
 }
 
+/* Параграфы в колонках */
 .col p {
     font-family: Vk_Medium;
-    font-size: 2vh;
-    text-indent: 20px;
-    line-height: 1.5;
-    padding-left: 5px;
+    font-size: calc(6px + (19 - 6) * ((100vw - 320px) / (1920 - 320)));
+    text-indent: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.25;
 }
 
+/* Колонки */
 .col {
     float: left;
     background-color: #ffffff;
-    border: 3px solid #e7e8ec;
+    border: calc(2px + (3 - 2) * ((100vw - 320px) / (1920 - 320))) solid #e7e8ec;
     border-radius: 10px;
-    padding: 5px;
-    width: calc(30% - 10px);
-    margin-top: 3%;
+    padding: calc(5px + (15 - 5) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(120px + (566 - 120) * ((100vw - 320px) / (1920 - 320)));
+    margin-top: calc(10px + (40 - 10) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: 20px;
 }
 
+/* Отступы для колонок */
 .first {
-    margin-left: 15%;
+    margin-left: calc(5px + (288 - 5) * ((100vw - 320px) / (1920 - 320)));
 }
 
 .second {
-    margin-left: calc(10% - 12px);
+    margin-left: calc(40px + (144 - 40) * ((100vw - 320px) / (1920 - 320)));
 }

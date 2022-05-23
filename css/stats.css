@@ -1,43 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-footer {
-    bottom: 20px;
-    margin: 20px 50vw;
-    text-align: center;
-}
-
+/* Горизонтальный блок */
 .row {
     background-color: #ffffff;
-    border: 10px solid #e7e8ec;
-    border-radius: 4px;
-    margin: 2.5vw 15vw 0 15vw;
-    width: calc(70vw - 120px);
-    height: 60vh;
-    min-height: 525px;
-    padding: 20px 50px;
+    border: calc(4px + (10 - 4) * ((100vw - 320px) / (1920 - 320))) black solid !important;
+    /* #e7e8ec */
+    border-radius: 10px;
+    margin-top: calc(10px + (35 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: calc(5px + (536 - 5) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding-right: calc(5px + (22 - 5) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(5px + (22 - 5) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(297px + (692 - 297) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(330px + (550 - 330) * ((100vw - 320px) / (1920 - 320)));;
     text-align: left;
 }
 
+/* Список статистики */
+.row ul{
+    list-style: none;
+    padding-left: calc(25px + (0 - 25) * ((100vw - 320px) / (1920 - 320)));
+}
+
+/* Строки списка */
+.row li {
+    margin: calc(0px + (10 - 0) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(12px + (30 - 12) * ((100vw - 320px) / (1920 - 320)));
+    position: relative;
+    height: calc(50px + (80 - 50) * ((100vw - 320px) / (1920 - 320)));
+}
+
+/* Значки для списка статистики */
 .row li img {
-    width: 50px;
-    height: auto;
+    width: calc(35px + (50 - 35) * ((100vw - 320px) / (1920 - 320)));
     position: absolute;
     top: 10px;
     left: 15px;
 }
 
-.row li {
-    margin: 0.5vw;
-    font-size: 22pt;
-    position: relative;
-    height: 80px;
-}
-
+/* Доп. блоки для текста */
 .row div {
     display: inline-block;
-    padding: 15px 80px;
     position: absolute;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 70px;
 }

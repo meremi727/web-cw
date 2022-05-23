@@ -1,76 +1,40 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
+/* Горизонтальный блок */
 .row {
     background-color: #ffffff;
-    border: 3px solid #e7e8ec;
-    border-radius: 4px;
-    margin: 2.5vw 10vw 0 10vw;
-    --mw: 80vw;
-    width: var(-mv);
-    padding: 20px 50px;
-
-}
-
-.row ul {
-    padding: 20px;
-    margin-left: var(--indent);
-    font-size: larger;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18pt;
-    line-height: calc(18pt * 1.5);
-}
-
-p {
-    text-indent: 40px;
-    width: 80vw - 10px;
-    font-size: 16pt;
-    line-height: calc(16pt * 1.5);
+    border: calc(1px + (5 - 1) * ((100vw - 320px) / (1920 - 320))) solid #a8a9ac;
+    border-radius: calc(5px + (10 - 5) * ((100vw - 320px) / (1920 - 320)));
+    margin-top: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: calc(5px + (288 - 5) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(300px + (1304 - 300) * ((100vw - 320px) / (1920 - 320)));
+    padding: calc(5px + (15 - 5) * ((100vw - 320px) / (1920 - 320)));
     margin-bottom: 20px;
+}
+
+/* Списки */
+.row ul {
+    padding: calc(10px + (20 - 10) * ((100vw - 320px) / (1920 - 320)));
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(15px + (24 - 15) * ((100vw - 320px) / (1920 - 320)));
+    line-height: calc(18pt * 1.5);
+    font-weight: bold;
+}
+
+/* Абзацы */
+p {
+    text-indent: calc(20px + (40 - 20) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(15px + (22 - 15) * ((100vw - 320px) / (1920 - 320)));
+    line-height: 1.5;
+    margin-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));;
     text-align: justify;
 }
 
+/* Выделенный в заметку текст */
 blockquote {
     background-color: #ffff99;
-    border-radius: 100px 0 100px 0;
+    border-radius: 0 calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320))) 0 calc(50px + (100 - 50) * ((100vw - 320px) / (1920 - 320)));
     border: 5px black dotted;
-    padding: 30px;
-    font-size: 20pt;
-    font-family: Vk-Bold;
-    font-weight: bold;
-    margin: 30px 20px;
-}
-
-footer {
+    padding-left: calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding-bottom: 20px;
+    padding-top: 0;
     margin: 20px;
-    text-align: center;
-}
-
-p a {
-    position: relative;
-    text-decoration: none;
-    transition: 5s linear;
-}
-
-p a:visited {
-    color: #b100b1;
-}
-
-p a::before {
-    content: '';
-    position: absolute;
-    top: 16pt;
-    height: 0;
-    left: 0;
-    right: 0;
-    border: none;
-    transition: 0.5s linear;
-    opacity: 0;
-    box-shadow: 0 0 3px 1px black;
-}
-
-p a:hover::before {
-    opacity: 1;
 }

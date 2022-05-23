@@ -1,14 +1,34 @@
 <html>
 
 <head>
-    <title>Соц. сеть "Вконтакте"</title>
+    <title>Соц. сеть "ВКонтакте"</title>
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/ecosystem.css" type="text/css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <!-- CONTACT -->
+    <!-- МЕНЮ -->
+    <table class="menu">
+        <tr>
+            <td id="logo">
+                <a href="index.html" tabindex="1"><img src="img/VK_Compact_Logo.png" alt="VK Logo"></a>
+            </td>
+            <td class="buttons"><a href="ecosystem.html" tabindex="2">ЭКОСИСТЕМА</a></td>
+            <td class="buttons"><a href="stat.html" tabindex="3">СТАТИСТИКА</a></td>
+            <td class="buttons"><a href="functions.html" tabindex="4">ФУНКЦИОНАЛ</a></td>
+            <td class="buttons"><a href="history.html" tabindex="5">ИСТОРИЯ</a></td>
+        </tr>
+        <tr>
+            <td active="0"></td>
+            <td active="1"></td>
+            <td active="0"></td>
+            <td active="0"></td>
+            <td active="0"></td>
+        </tr>
+    </table>
+    <!-- ОБРАТНАЯ СВЯЗЬ -->
     <ul id="contact" tabindex="0">
         <li class="feedback">Обратная связь</li>
         <li class="form-name hide"><input name="first-name" maxlength="20" id="id_first_name" placeholder="Имя">
@@ -23,38 +43,20 @@
             <center><input type="submit"></center>
         </li>
     </ul>
-    <!-- MENU -->
-    <table class="menu">
-        <tr>
-            <td id="logo"><a href="index.html" tabindex="1"><img src="img/VK_Compact_Logo.png" alt="VK Logo"></a></td>
-            <td class="buttons"><a href="ecosystem.html" tabindex="2">ЭКОСИСТЕМА</a></td>
-            <td class="buttons"><a href="stat.html" tabindex="3">СТАТИСТИКА</a></td>
-            <td class="buttons"><a href="functions.html" tabindex="4">ФУНКЦИОНАЛ</a></td>
-            <td class="buttons"><a href="history.html" tabindex="5">ИСТОРИЯ</a></td>
-        </tr>
-        <tr>
-            <td active="0"></td>
-            <td active="1"></td>
-            <td active="0"></td>
-            <td active="0"></td>
-            <td active="0"></td>
-        </tr>
-    </table>
-    <!-- CONTENT -->
+    <!-- КОНТЕНТ -->
     <div class="row">
         <p>
-            ВКонтакте находится в центре так называемой «экосистемы» ВКонтакте, которую развивает VK.
-            «Экосистема» объединяет проекты: социальную сеть ВКонтакте, платёжный сервис VK Pay, подписку VK Combo,
-            сервисы для заказа еды и продуктов Delivery Club и Самокат, платформу VK Mini Apps (мини-приложения
-            Такси ВКонтакте, Еда
-            ВКонтакте, VK Работа и прочие), сервис заказа такси Ситимобил, голосовой помощник Марусю и другие.
-            Ниже вы можете ознакомится c краткой информацией о проектах «экосистемы» VK.
+            ВКонтакте находится в центре так называемой «экосистемы» ВКонтакте, которую развивает VK. «Экосистема»
+            объединяет проекты: социальную сеть ВКонтакте, платёжный сервис VK Pay, подписку VK Combo, сервисы для
+            заказа еды и продуктов Delivery Club и Самокат,
+            платформу VK Mini Apps (мини-приложения Такси ВКонтакте, Еда ВКонтакте, VK Работа и прочие), сервис
+            заказа такси Ситимобил, голосовой помощник Марусю и другие. Ниже вы можете ознакомится c краткой
+            информацией о проектах «экосистемы» VK.
         </p>
     </div>
-    <div class="tab">
+    <div class="FrameBlock">
         <iframe src="table.html" frameborder="0"></iframe>
     </div>
-    <footer></footer>
 </body>
 
 </html>

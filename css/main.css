@@ -1,4 +1,4 @@
-/* FONTS */
+/* Шрифты */
 @font-face {
     font-family: Vk_Bold;
     src: local(VK_BOLD), url(fonts/VKSansDisplay-Bold.ttf);
@@ -23,203 +23,172 @@
     font-weight: 500;
 }
 
+/* 
+Формула для адаптации размеров элементов под экраны разной ширины:
+    calc(MINpx + (NOW - MIN) * ((100vw - MIN_WIDTHpx) / (NOW_WIDTH - MIN_WIDTH)))
+        MIN - минимальный значение параметра элемента
+        NOW - значение параметра элемента при текущем разрешении
+        MIN_WIDTH - минимальное разрешение. При данном разрешении значение параметра будет равняться MIN.
+        NOW_WIDTH -  текущее разрешение. При данном разрешении значение параметра будет равняться NOW.
+        100vw - ширина экрана, для которой происходит расчет.
+        px - пиксели
+*/
+
+/* Обнуление отступов и фон для всех страниц */
 * {
     margin: 0;
     padding: 0;
 }
 
-body,
 html {
     background-color: #edeef0;
 }
 
-.content {
+/* Меню */
+.menu {
+    background-color: white;
     position: relative;
+    margin-top: calc(10px + (35 - 10) * ((100vw - 320px) / (1920 - 320)));
+    margin-left: calc(5px + (288 - 5) * ((100vw - 320px) / (1920 - 320)));
+    width: calc(310px + (1344 - 310) * ((100vw - 320px) / (1920 - 320)));
+    border-radius: 10px;
+    border: calc(2px + (5 - 2) * ((100vw - 320px) / (1920 - 320))) #a2a2a3 solid;
+}
+
+/* Кнопки в меню */
+.buttons {
+    text-align: center;
+    font-family: Verdana;
+    font-size: calc(10px + (30 - 10) * ((100vw - 320px) / (1920 - 320)));
+    font-weight: bolder;
+    border-radius: 25px;
+    transition: all 0.4s;
+    font-style: oblique;
+}
+
+/* Смена цвета и убирание подчеркивания у ссылко в меню */
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Логотип в меню */
+#logo {
+    width: calc(25px + (75 - 25) * ((100vw - 320px) / (1920 - 320)));
+    padding-top: calc(1px + (4 - 1) * ((100vw - 320px) / (1920 - 320)));
+    padding-left: calc(1px + (4 - 1) * ((100vw - 320px) / (1920 - 320)));
+}
+
+#logo img {
     width: 100%;
-    padding-top: 3%;
+    transition: all 1s;
 }
 
-/* MENU */
-@media (min-width:1024px) {
-    .menu {
-        background-color: white;
-        position: relative;
-        margin: 1% 0 0 15%;
-        width: 70%;
-        border-radius: 10px;
-        border: 5px #a2a2a3 solid;
-    }
-
-    .buttons {
-        text-align: center;
-        font-family: Verdana;
-        font-size: 1.25vw;
-        font-weight: bolder;
-        border-radius: 25px;
-        transition: all 0.4s;
-        font-style: oblique;
-    }
-
-    .buttons:hover {
-        transform: scale(1.15);
-    }
-
-    #logo img:hover {
-        transform: rotate(360deg) scale(1.2);
-    }
-
-    .menu a {
-        text-decoration: none;
-        color: black;
-    }
-
-    #logo {
-        width: 5%;
-        height: 100%;
-        padding: 0.3% 0.2% 0.2% 0.2%;
-    }
-
-    #logo img {
-        width: 100%;
-        transition: all 1s;
-    }
-
-    [active="0"] {
-        content: '';
-        height: 10px;
-        width: auto;
-        background-color: #649ada;
-        border-radius: 5px;
-        border: 1px #ffffff solid;
-    }
-
-    [active="1"] {
-        content: '';
-        height: 10px;
-        width: auto;
-        background-color: blueviolet;
-        border-radius: 5px;
-        border: 1px #ffffff solid;
-    }
-
+/* Анимации кнопок и логотипа в меню */
+.buttons:hover {
+    transform: scale(1.15);
 }
 
-/* MOBILE */
-@media (max-width:1px) {
-
-    .buttons {
-        text-align: center;
-        font-family: Verdana;
-        font-size: medium;
-        font-weight: bolder;
-        border-radius: 10px;
-        transition: all 0.4s;
-        font-style: oblique;
-    }
+#logo img:hover {
+    transform: rotate(360deg) scale(1.2);
 }
 
-@media (min-width:1023px) {}
-
-
-/* CONTACT */
-/* MOBILE */
-@media (max-height:675px) {
-
-    #contact,
-    .feedback,
-    .form-feedback {
-        display: none;
-    }
+/* Индикаторы открытой страницы */
+[active="0"] {
+    height: calc(4px + (10 - 1) * ((100vw - 320px) / (1920 - 320)));
+    background-color: #649ada;
+    border-radius: 5px;
+    border: 1px #ffffff solid;
 }
 
+[active="1"] {
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: 1px #ffffff solid;
+}
 
+/* Обратная связь */
 
-/* ALL DEVICES WITHOUT MOBILE */
-@media (min-height:675px) {
+/* Блок обратной связи */
+#contact {
+    font-family: Vk_Medium;
+    font-weight: 700;
+    font-size: 14px;
+    font-style: normal;
+    position: fixed;
+    bottom: -5px;
+    right: 2vw;
+    height: 17px;
+    width: 182px;
+    padding: 5px 5px 5px 5px;
+    z-index: 10;
+    border: 5px blueviolet solid;
+    border-radius: 10px 10px 0 0;
+    background-color: #edeef0;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.75s;
+}
 
+/* Текст "Обратная связь" */
+#contact .feedback {
+    text-align: center;
+}
+
+/* Круг в правом верхнем углу блока обратной связи */
+#contact::after {
+    content: '';
+    border-radius: 50px;
+    border: 7px red solid;
+    position: fixed;
+    right: calc(2vw - 2px);
+    bottom: calc(22px);
+    transition: all 1s;
+}
+
+/* Текстовое поле для отзыва */
+#contact .form-feedback [name="text-area"] {
+    display: inline-block;
+    height: 75px;
+    width: 171px;
+    text-align: left;
+    vertical-align: text-top;
+    resize: none;
+}
+
+/* Скрытие круга при наведении на блок обратной связи */
+#contact:hover::after {
+    border: none;
+}
+
+/* Скрытие формы обратной связи по умолчанию */
+#contact .hide {
+    display: none;
+    position: relative;
+    top: 200px;
+    margin: 5px;
+}
+
+/* Анимация блока обратной связи при наведении */
+#contact:hover {
+    height: 185px;
+    animation-name: open-feedback;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    z-index: 10;
+}
+
+/* Отображение формы при наведении */
+#contact:hover .hide {
+    display: block;
+    z-index: -5;
+    top: 0;
+}
+
+/* Скрытие блока обратной связи для экранов с маленькой шириной */
+@media (max-width:1023px) {
     #contact {
-        font-family: Vk_Medium;
-        font-weight: 700;
-        font-size: 10pt;
-        font-style: normal;
-        position: fixed;
-        bottom: -5px;
-        right: 2vw;
-        height: 17px;
-        width: 182px;
-        padding: 5px 5px 5px 5px;
-        z-index: 10;
-        border: 5px blueviolet solid;
-        border-radius: 10px 10px 0 0;
-        background-color: #edeef0;
-        list-style: none;
-        cursor: pointer;
-        transition: all 0.75s;
-    }
-
-    #contact::after {
-        content: '';
-        border-radius: 50px;
-        border: 7px red solid;
-        position: fixed;
-        right: calc(2vw - 2px);
-        bottom: calc(22px);
-        transition: all 1s;
-    }
-
-    #contact:hover::after {
-        border: none;
-    }
-
-    #contact:hover {
-        height: 170px;
-        animation-name: open-feedback;
-        animation-fill-mode: forwards;
-        animation-duration: 0.5s;
-        animation-timing-function: linear;
-
-        z-index: 10;
-    }
-
-    #contact:hover .hide {
-        display: block;
-        z-index: -5;
-        top: 0;
-    }
-
-    #contact .hide {
-        margin: 5px;
-    }
-
-    #contact .hide {
         display: none;
-        position: relative;
-        top: 200px;
-        transition: all 0.75s;
-
-    }
-
-    .feedback {
-        text-align: center;
-    }
-
-    .form-feedback {
-        display: inline-block;
-    }
-
-    .form-feedback [name="text-area"] {
-        height: 75px;
-        width: 171px;
-        text-align: left;
-        vertical-align: text-top;
-        resize: none;
-    }
-
-    .form-feedback .bg {
-        position: absolute;
-        top: 30px;
-        left: 45px;
-        opacity: 0.5;
-        z-index: 10;
     }
 }
