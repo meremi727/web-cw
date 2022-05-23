@@ -45,6 +45,7 @@ span {
 
 /* Видео */
 [title="YouTube video player"] {
-    width: calc(290px + (1274 - 300) * ((100vw - 320px) / (1920 - 320)));
-    height: auto;
+    margin-top: 20px;
+    width: calc(290px + (560 - 300) * ((100vw - 320px) / (1920 - 320)));
+    height: calc(180px + (415 - 300) * ((100vw - 320px) / (1920 - 320)));;
 }
