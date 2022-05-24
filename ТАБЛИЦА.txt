@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+#ecotable {
+    font-family: Times New Roman;
+    background-color: white;
+    padding: 10px;
+}
+
+#ecotable th {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#th{
+    margin-bottom: 20px;
+}
+
+#ecotable td {
+    padding-bottom: 20px;
+    width: max-content;
+}
+
+.tab {
+    position: fixed;
+    left: 21vw;
+    right: 21vw;
+    background-color: #ffffff;
+    border: 5px solid #a8a9ac;
+    border-radius: 10px;
+    font-family: Vk_Medium;
+    text-indent: 20px;
+    height: 55vh;
+    padding-right: 10px;
+}
+
+iframe {
+    height: 55vh;
+    width: calc(100% - 12px);
+}
+
+footer {
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 20px;
+}
+
+span{
+    padding-left: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+
+    </style>
+</head>
+
+<body style="background-color: white;">
+    <div>
+        <table id="ecotable">
+            <tr>
+                <th> Продукт </th>
+                <th> Описание </th>
+            </tr>
+            <tr> <td colspan="2">&nbsp;</td></tr>
+            <tr><td colspan="2"><h3> Социальные сети </h3></td></tr>
+            <tr>
+                <td width="40%">
+                    <img src="img/vk.webp" alt="ВКонтакте" align="left">
+                    <span> ВКонтакте </span>
+                </td>
+                <td> Популярная соцсеть и приложение </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/ok.webp" alt="Одноклассники" align="left">
+                    <span> Одноклассники </span>
+                </td>
+                <td> Первая соцсеть в России, один из лучших видеосервисов </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/my_world.webp" alt="Мой Мир" align="left"> 
+                    <span> Мой Мир </span>
+                </td>
+                <td> Первая соцсеть в экосистеме VK и платформа для игр </td>
+            </tr>
+            <tr><td colspan="2"><h3> Образование </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK образование" align="left"> 
+                    <span> VK образование </span>
+                </td>
+                <td>
+                    Путь в ИТ и помощь в совершенствовании. Параллельно можно освоить веб-разработку, анализ
+                    данных, информационную безопасность и другие специальности.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/all_cups.webp" alt="All Cups" align="left"> 
+                    <span> All Cups </span>
+                </td>
+                <td> Площадка для проведения ИТ-чемпионатов </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/sferum.webp" alt="Сферум" align="left"> 
+                    <span> Сферум </span>
+                </td>
+                <td> Онлайн-платформа для обучения и образовательных коммуникаций </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/geek_brains.webp" alt="GeekBrains" align="left"> 
+                    <span> GeekBrains </span>
+                </td>
+                <td> Портал для обучения программированию, маркетингу, дизайну и управлению с нуля </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/skillbox.webp" alt="Skillbox" align="left"> 
+                    <span> Skillbox </span>
+                </td>
+                <td> Платформа дополнительного профессионального онлайн-образования </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/skill_factory.webp" alt="SkillFactory"align="left"> 
+                    <span> SkillFactory </span>
+                </td>
+                <td>  Онлайн-школа. Обучение цифровым профессиям: работа с данными, машинное обучение </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/algoritmika.webp" alt="Алгоритмика" align="left"> 
+                    <span> Алгоритмика </span>
+                </td>
+                <td> Школа математики и программирования для детей от 6 до 17 лет. Международная. </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/uchi_ru.webp" alt="Учи.ру" align="left"> 
+                    <span> Учи.ру </span>
+                </td>
+                <td> Платформа для школьного и самостоятельного обучения </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/tetrika.webp" alt="Тетрика" align="left"> 
+                    <span> Тетрика </span>
+                </td>
+                <td> Подготовка по школьным предметам и экзаменам ЕГЭ и ОГЭ </td>
+            </tr>
+            <tr><td colspan="2"><h3> Товары и услуги </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/aliexpress.webp" alt="AliExpress" align="left"> 
+                    <span> AliExpress Россия </span>
+                </td>
+                <td> Покупки со всего мира </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk_rabota.webp" alt="VK Работа" align="left"> 
+                    <span> VK Работа </span>
+                </td>
+                <td> Сервис для поиска работы и сотрудников </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/jula.webp" alt="Юла" align="left"> 
+                    <span> Юла </span>
+                </td>
+                <td> Сервис объявлений на основе геолокации и интересов </td>
+            </tr>
+            <tr><td colspan="2"><h3> Еда и доставка </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/delivery_club.webp" alt="Delivery Club" align="left"> 
+                    <span> Delivery Club </span>
+                </td>
+                <td> Крупнейший в России сервис доставки готовой еды и продуктов </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/eda_vkontakte.webp" alt="Еда ВКонтакте" align="left"> 
+                    <span> Еда ВКонтакте </span>
+                </td>
+                <td> Для заказа еды и продуктов, не выходя из ВКонтакте </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/samokat.webp" alt="Самокат" align="left"> 
+                    <span> Самокат </span>
+                </td>
+                <td> Онлайн-ритейлер с доставкой товаров за 15 минут </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/kukhnja_na_rajone.webp" alt="Кухня на районе" align="left"> 
+                    <span> Кухня на районе </span>
+                </td>
+                <td> Горячая домашняя еда с доставкой за 30 минут </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/Performance_Food.webp" alt="Performance Food" align="left"> 
+                    <span> Performance Food </span>
+                </td>
+                <td> Крупнейший в стране производитель готовых рационов </td>
+            </tr>
+            <tr><td colspan="2"><h3> Транспорт </h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/taksi_vkontakte.webp" alt="Такси ВКонтакте" align="left"> 
+                    <span> Такси ВКонтакте </span>
+                </td>
+                <td> Заказ такси и доставки прямо ВКонтакте </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/sity_mobile.webp" alt="Ситимобил" align="left"> 
+                    <span> Ситимобил </span>
+                </td>
+                <td> Сервис городской мобильности: такси, электросамокаты, каршеринг, доставка </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/sity_drive.webp" alt="Ситидрайв" align="left"> 
+                    <span> Ситидрайв </span>
+                </td>
+                <td> Каршеринг-сервис в крупнейших российских городах </td>
+            </tr>
+            <tr><td colspan="2"><h3> Продуктивность </h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/my_world.webp" alt="Почта" align="left"> 
+                    <span> Почта </span>
+                </td>
+                <td> Центр управления делами: Облако, Календарь, Задачи, Звонки и Новости </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/cloud.webp" alt="Облако" align="left"> 
+                    <span> Облако </span>
+                </td>
+                <td> Сервис для хранения файлов и совместной работы с ними </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/zadachi.webp" alt="Задачи" align="left"> 
+                    <span> Задачи </span>
+                </td>
+                <td> Инструмент для планирования дел </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/kalendar.webp" alt="Календарь" align="left"> 
+                    <span> Календарь </span>
+                </td>
+                <td> Планирование дня и управление временем </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/videozvonki.webp" alt="Видеозвонки" align="left"> 
+                    <span> Видеозвонки </span>
+                </td>
+                <td> Сервис видеосвязи с возможностью присоединения участников по ссылке </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/disk-o.webp" alt="Диск‑О" align="left"> 
+                    <span> Диск‑О</span>
+                </td>
+                <td> Программа, с которой вы сможете переключаться между облаками. Агрегатор облачных дисков </td>
+            </tr>
+            <tr><td colspan="2"><h3> Устройства </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/kapsula.webp" alt="Капсула" align="left"> 
+                    <span> Капсула </span>
+                </td>
+                <td> Умная колонка от VK с голосовым помощником Марусей </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/kapsula_mini.webp" alt="Капсула Мини" align="left"> 
+                    <span> Капсула Мини </span>
+                </td>
+                <td>  Компактная умная колонка с Марусей, с часами и глазами </td>
+            </tr>
+            <tr><td colspan="2"><h3>Медиапроекты и развлечения</h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/BOOM.webp" alt="BOOM" align="left"> 
+                    <span> BOOM </span>
+                </td>
+                <td> Музыкальное приложение: любимая музыка даже в режиме офлайн </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/novosti.webp" alt="Новости" align="left"> 
+                    <span> Новости </span>
+                </td>
+                <td> Актуальная информация о событиях страны и мира в удобных форматах </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/sport.webp" alt="Спорт" align="left"> 
+                    <span> Спорт </span>
+                </td>
+                <td> Всё о главных спортивных событиях: новости, прогнозы, фото, видео, трансляции </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Дети" align="left"> 
+                    <span> Дети </span>
+                </td>
+                <td> Медиа о семье, беременности, родах и воспитании детей </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Леди" align="left"> 
+                    <span> Леди </span>
+                </td>
+                <td>  Женский сайт: мода, стиль, красота и многое другое </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Авто" align="left"> 
+                    <span> Авто </span>
+                </td>
+                <td> Материалы и сервисы для автомобилистов и всех, кто живет в движении </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Hi-Tech" align="left"> 
+                    <span> Hi-Tech </span>
+                </td>
+                <td> Издание о технологиях: новости, обзоры и видеоматериалы о технике </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Кино" align="left"> 
+                    <span> Кино </span>
+                </td>
+                <td> Агрегатор онлайн-кинотеатров, где можно смотреть фильмы и узнавать о новинках </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Дом" align="left"> 
+                    <span> Дом </span>
+                </td>
+                <td> Все о недвижимости: от дизайна интерьера и нюансов строительства до выбора жилья </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Питомцы" align="left"> 
+                    <span> Питомцы </span>
+                </td>
+                <td> Необходимое для хозяев кошек и собак с консультациями ветеринаров и магазином с кормами </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Здоровье" align="left"> 
+                    <span> Здоровье </span>
+                </td>
+                <td> Ресурс о медицине и здоровом образе жизни с консультациями врачей и записью в клиники </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Hi-chef" align="left"> 
+                    <span> Hi-chef </span>
+                </td>
+                <td>  Кулинарный проект с голосовым навигатором: тысячи рецептов и готовые меню </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Пульс" align="left"> 
+                    <span> Пульс </span>
+                </td>
+                <td> Лента персональных статей и видео, подобранных на основе интересов пользователя </td>
+            </tr>
+            <tr><td colspan="2"><h3> Для авторов </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/Boosty.to.webp" alt="Boosty.to" align="left"> 
+                    <span> Boosty.to </span>
+                </td>
+                <td> Платформа монетизации авторского контента </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/DonationAlerts.webp" alt="DonationAlerts" align="left"> 
+                    <span> DonationAlerts </span>
+                </td>
+                <td>  Сервис для стримеров: монетизация и повышение интерактивности трансляций  </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK Talents" align="left"> 
+                    <span> VK Talents </span>
+                </td>
+                <td> Гранты и программа поддержки талантливых авторов ВКонтакте </td>
+            </tr>
+            <tr><td colspan="2"><h3> Социальные сервисы </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/dobro.webp" alt="Добро" align="left"> 
+                    <span> Добро </span>
+                </td>
+                <td> Сервис для умной и честной благотворительности </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="Благотворительность ВКонтакте" align="left"> 
+                    <span> Благотворительность ВКонтакте </span>
+                </td>
+                <td> Поддержка благотворительности и совместное решение социальных проблем </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/dobrye_kilometry.webp" alt="Добрые километры" align="left"> 
+                    <span> Добрые километры</span>
+                </td>
+                <td>Проект Ситимобила для помощи подопечным фондов — партнеров Добра </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/socialnye_proekty_ok.webp" alt="Социальные проекты ОК" align="left">
+                    <span> Социальные проекты ОК </span>
+                </td>
+                <td> Онлайн-просвещение и помощь благотворительным фондам </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/oblako_dlja_fondov.webp" alt="Облако для фондов" align="left"> 
+                    <span> Облако для фондов </span>
+                </td>
+
+                <td> Бесплатный доступ к сервисам VK Cloud Solutions </td>
+            </tr>
+            <tr><td colspan="2"><h3> Здоровье </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/vse_apteki.webp" alt="Все аптеки" align="left"> 
+                    <span> Все аптеки </span>
+                </td>
+                <td> Онлайн-сервис поиска и заказа лекарств по лучшей цене </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/zdorove_vkontakte.webp" alt="Здоровье ВКонтакте" align="left"> 
+                    <span> Здоровье ВКонтакте </span>
+                </td>
+                <td> Забота о здоровье, не выходя из ВКонтакте </td>
+            </tr>
+            <tr><td colspan="2"><h3> Мессенджеры </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/ICQ.webp" alt="ICQ" align="left"> 
+                    <span> ICQ </span>
+                </td>
+                <td> Первый мессенджер на базе искусственного интеллекта </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/tamtam.webp" alt="ТамТам" align="left"> 
+                    <span> ТамТам </span>
+                </td>
+                <td> Mессенджер с каналами, геосервисами и групповыми видеозвонками </td>
+            </tr>
+            <tr><td colspan="2"><h3> Информация и поиск </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Поиск" align="left"> 
+                    <span> Поиск </span>
+                </td>
+                <td> Умный поиск по интернету и соцсетям </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/mail.webp" alt="Ответы" align="left"> 
+                    <span> Ответы </span>
+                </td>
+                <td> Сервис для поиска ответа на любой вопрос и обмена опытом </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/Atom.webp" alt="Atom" align="left"> 
+                    <span> Atom </span>
+                </td>
+                <td> 222 </td>
+            </tr>
+            <tr><td colspan="2"><h3> Экосистемные сервисы </h3></td></tr>
+            <tr>
+                <td>
+                    <img src="img/marusja.webp" alt="Маруся" align="left">
+                </td>
+                <td> Голосовой помощник: включит музыку, ответит на вопросы, позвонит другу </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK Pay" align="left"> 
+                    <span> VK Pay </span>
+                </td>
+                <td> Платежный сервис </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK ID" align="left"> 
+                    <span> VK ID </span>
+                </td>
+                <td> Единая учетная запись для всех проектов экосистемы VK </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK Combo" align="left"> 
+                    <span> VK Combo </span>
+                </td>
+                <td> Подписка на скидки в экосистеме VK и предложения от партнеров  </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="img/vk.webp" alt="VK Mini Apps" align="left"> 
+                    <span> VK Mini Apps </span>
+                </td>
+                <td> Платформа сервисов внутри соцсетей для решения повседневных задач </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

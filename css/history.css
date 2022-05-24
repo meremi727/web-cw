@@ -32,6 +32,15 @@ blockquote {
     margin-bottom: calc(15px + (30 - 15) * ((100vw - 320px) / (1920 - 320)));
 }
 
+/* Списки */
+.row ul {
+    padding-left: 20px;
+}
+
+.row ul p {
+    text-indent: 0;
+}
+
 /* Заголовки */
 h2 {
     margin-top: 30px;
@@ -47,5 +56,36 @@ span {
 [title="YouTube video player"] {
     margin-top: 20px;
     width: calc(290px + (560 - 300) * ((100vw - 320px) / (1920 - 320)));
-    height: calc(180px + (415 - 300) * ((100vw - 320px) / (1920 - 320)));;
+    height: calc(180px + (415 - 300) * ((100vw - 320px) / (1920 - 320)));
+    ;
+}
+
+#arrow {
+    position: relative;
+    margin-left: 45%;
+    margin-right: auto;
+    width: 150px;
+    display: inline-block;
+    margin-top: 20px;
+}
+/* Прямоугольник красный */
+#arrow::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    border: 0px solid transparent;
+    width: 10px;
+    height: 20px;
+    background-color: red;
+}
+
+/* Стрелка, указывающая на видео */
+#arrow::after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 20px solid transparent;
+    border-top: 20px solid green;
 }

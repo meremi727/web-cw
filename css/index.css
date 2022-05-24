@@ -2,7 +2,7 @@
 .marina center {
     text-align: center;
     font-family: Calibri;
-    font-size: calc(4px + (20 - 4) * ((100vw - 320px) / (1920 - 320)));;
+    /*font-size: calc(4px + (20 - 4) * ((100vw - 320px) / (1920 - 320)));;*/
     margin-bottom: calc(5px + (20 - 5) * ((100vw - 320px) / (1920 - 320)));;
 }
 
